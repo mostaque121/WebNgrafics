@@ -1,7 +1,9 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 export default function ContactForm() {
   return (
-    <div id='contact-form' >
+    <div id='contact-form' className="relative" >
+      <div className="buble-blue"></div>
+      <div className="buble-red"></div>
       <div className='flex md:mx-16 mx-5 py-16 gap-10 justify-between flex-col-reverse md:flex-row '>
         <div className='md:w-1/2 w-full'>
           <form  >
@@ -87,7 +89,7 @@ export default function ContactForm() {
               <Mail className='p-2 w-10 h-10' />
             </div>
 
-            <p className='text-gray-200'>Mostaque121@gmail.com</p>
+            <p className='text-gray-200'>111111111@gmail.com</p>
           </div>
           <div className='flex  items-center gap-3'>
             <div className='text-white  rounded-full bg-Stext'>

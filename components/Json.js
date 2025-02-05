@@ -56,3 +56,48 @@ export const services = [
     }
 
 ];
+
+export const HowWeDifferentPoints = [
+    {
+        title: "Comprehensive Digital Solutions",
+        text: "Unlike others who specialize in only one area, we offer end-to-end services—web development, branding, SEO, and marketing—ensuring a seamless digital experience for your business.",
+        img: '/solution.svg'
+    },
+    {
+        title: "Unique, High-Performance Designs",
+        text: "We don’t use generic templates. Our designs are custom-crafted to match your brand's identity, blending aesthetics with performance for a unique user experience.",
+        img: '/performance.svg'
+    },
+    {
+        title: "Client-First, Growth-Focused",
+        text: "We prioritize long-term partnerships, offering continuous support, data-driven strategies, and transparent communication to help your business grow sustainably.",
+        img: '/growth.svg'
+    }
+]
+
+export const FaqData = [
+    {
+        question: "What services do you offer?",
+        answer: "We offer a full range of services including web development, graphic design, SEO, branding, and digital marketing to help businesses grow and succeed online."
+    },
+    {
+        question: "How long does it take to complete a project?",
+        answer: "The timeline varies based on the complexity of the project. On average, it can take anywhere from a few weeks to a few months. We'll provide a detailed estimate during the consultation phase."
+    },
+    {
+        question: "What is your pricing model?",
+        answer: "Our pricing is project-based, and we offer custom quotes based on your specific needs. We believe in transparency, so we’ll ensure you understand all costs upfront."
+    },
+    {
+        question: "Do you provide ongoing support after the project is finished?",
+        answer: "Yes, we offer ongoing support and maintenance packages to ensure your website or digital solutions are always running smoothly."
+    },
+    {
+        question: "Can you work with my existing branding?",
+        answer: "Absolutely! We can integrate your current branding into our designs or work with you to refresh and modernize it, aligning it with your business goals."
+    },
+    {
+        question: "How can I get started?",
+        answer: "Getting started is easy! Simply reach out to us via our contact form or email. We'll schedule a consultation to discuss your project goals and begin the planning process."
+    }
+];

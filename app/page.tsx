@@ -1,7 +1,9 @@
+import { Faq } from "@/components/Manual/Faq";
 import ContactForm from "@/components/Manual/Form/ContactForm";
 import ResponseForm from "@/components/Manual/Form/ResponseForm";
 import HeroSection from "@/components/Manual/Home/HeroSection";
 import ServiceWeProvide from "@/components/Manual/Home/ServiceWeProvide";
+import HowWeDifferent from "@/components/Manual/HowWeDifferent";
 export default function Home() {
   return (
     <div className="w-full  max-w-7xl mx-auto pt-16 relative">
@@ -16,6 +18,8 @@ export default function Home() {
       </div>
 
       <ServiceWeProvide />
+      <HowWeDifferent />
+      <Faq />
       <ContactForm />
     </div>
   );
