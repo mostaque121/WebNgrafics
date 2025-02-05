@@ -47,6 +47,21 @@ body {
   top: 400px;
   width: 150px;
 }
+@media (max-width: 768px) {
+  .buble-blue-left {
+    background-color: #52d9d999;
+    border-radius: 0 350px 350px 0;
+    bottom: 0;
+    filter: blur(80px);
+    height: 500px;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 300px;
+    width: 150px;
+    z-index: 1;
+  }
+}
 .response-form-input {
   background-color: transparent;
   border: 0.5px solid white;

@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
-    const [isMenuOpen, setIsMenuOpen] = useState(true);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const pathname = usePathname();
 
@@ -38,25 +38,29 @@ const Navbar = () => {
                     </Link>
 
                     <ul className="md:flex hidden items-center ml-7">
-                        <Link href={"/allservices"}>
-                            <div className="group relative py-2 flex items-center gap-2 ">
-                                <LaptopMinimal className={`w-5 pl-2 h-5 ${pathname === "/allservices" ? "font-semibold text-Stext" : ""}`} />
-                                <li className={`capitalize border-r-2 pr-2 border-white text-sm ${pathname === "/allservices" ? "font-semibold text-Stext" : ""}`}>
-                                    All Services
-                                </li>
-
-                                {/* Dropdown menu */}
-                                <div className="absolute top-[35px] left-0 w-60 hidden group-hover:block py-3 bg-white flex-col space-y-2   rounded-md">
-                                    {subItems.map((subItem, index) => (
-                                        <Link href={subItem.href} key={index}>
-                                            <div onClick={() => setIsMenuOpen(false)} className="flex text-black items-center h-8 p-2 hover:bg-gray-200 rounded-md">
-                                                <span>{subItem.label}</span>
-                                            </div>
-                                        </Link>
-                                    ))}
+                        <div className="group relative py-2 ">
+                            <Link href={"/allservices"}>
+                                <div className="flex items-center gap-2">
+                                    <LaptopMinimal className={`w-5 pl-2 h-5 ${pathname === "/allservices" ? "font-semibold text-Stext" : ""}`} />
+                                    <li className={`capitalize border-r-2 pr-2 border-white text-sm ${pathname === "/allservices" ? "font-semibold text-Stext" : ""}`}>
+                                        All Services
+                                    </li>
                                 </div>
+                            </Link>
+
+
+                            {/* Dropdown menu */}
+                            <div className="absolute top-[35px] left-0 w-60 hidden group-hover:block py-3 bg-white flex-col space-y-2   rounded-md">
+                                {subItems.map((subItem, index) => (
+                                    <Link href={subItem.href} key={index}>
+                                        <div onClick={() => setIsMenuOpen(false)} className="flex text-black items-center h-8 p-2 hover:bg-gray-200 rounded-md">
+                                            <span>{subItem.label}</span>
+                                        </div>
+                                    </Link>
+                                ))}
                             </div>
-                        </Link>
+                        </div>
+
                         <Link href={"/about"}>
                             <li className={`capitalize text-sm ml-3 ${pathname === "/about" ? "text-Stext font-semibold" : ""}`}>About</li>
                         </Link>

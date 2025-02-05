@@ -19,6 +19,7 @@ export default {
         TtextA: "#0086A0",
         StextH: "#149CA5",
         StextA: "#118D91",
+        Redish: "#fc1c69",
       },
     },
   },
