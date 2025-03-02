@@ -1,3 +1,4 @@
+import { Briefcase, CheckCircle, Code } from "lucide-react";
 export const services = [
     {
         name: 'Web Development',
@@ -75,6 +76,29 @@ export const HowWeDifferentPoints = [
     }
 ]
 
+export const HowWeHelpPoints = [
+    {
+        title: "Build a Strong Digital Foundation",
+        text: "Develop a high-performance website, mobile app, and visually appealing UI/UX design to create a seamless and engaging experience that attracts and retains users",
+        img: '/web.svg'
+    },
+    {
+        title: "Create a Powerful Brand Identity",
+        text: "Enhance brand recognition with stunning graphics, professional logos, and cohesive visual elements that make your business unforgettable.",
+        img: '/graphic.svg'
+    },
+    {
+        title: "Dominate Search Engine Rankings",
+        text: "Implement effective SEO strategies, content marketing, and keyword optimization to boost your online visibility and drive organic traffic.",
+        img: '/seo.svg'
+    },
+    {
+        title: "Convert Visitors into Customers",
+        text: "Leverage data-driven marketing, compelling calls-to-action, and customer engagement tactics to turn website visitors into loyal clients and repeat buyers.",
+        img: '/client.svg'
+    }
+]
+
 export const FaqData = [
     {
         question: "What services do you offer?",
@@ -100,4 +124,25 @@ export const FaqData = [
         question: "How can I get started?",
         answer: "Getting started is easy! Simply reach out to us via our contact form or email. We'll schedule a consultation to discuss your project goals and begin the planning process."
     }
+];
+
+export const HowWeWorkPoints = [
+    {
+        title: "Tell Us Your Vision",
+        description: "Share your ideas through our streamlined request system. Whether it’s a website, app, or graphics, our intuitive process ensures every detail is captured effortlessly.",
+        icon: <Briefcase className="w-12 h-12 text-Ttext" />,
+        image: "/step1.jpg",
+    },
+    {
+        title: "Our Experts Get to Work",
+        description: "Our skilled designers and developers bring your vision to life, ensuring high-quality, responsive, and visually stunning results tailored to your brand.",
+        icon: <Code className="w-12 h-12 text-Ttext" />,
+        image: "/step2.jpg",
+    },
+    {
+        title: "Review & Refine",
+        description: "Receive your design, provide feedback, and request revisions as needed. We offer unlimited revisions and deliver all necessary files for seamless implementation.",
+        icon: <CheckCircle className="w-12 h-12 text-Ttext" />,
+        image: "/step3.jpg",
+    },
 ];

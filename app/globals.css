@@ -88,3 +88,9 @@ body {
   color: white;
   padding: 2px 10px;
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.25fr 0.25fr 50fr;
+  gap: 10px;
+  padding: 10px;
+}
